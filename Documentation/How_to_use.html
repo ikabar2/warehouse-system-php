@@ -1,0 +1,78 @@
+<h1 id="cp476-group-project-warehouse-management---using-the-application">CP476 Group Project: Warehouse management - Using the Application</h1>
+<h2 id="dependancies">1. Dependancies</h2>
+<ol class="incremental" type="1">
+<li>Apache webserver</li>
+<li>MySQL</li>
+</ol>
+<h2 id="running">2. Running</h2>
+<ol class="incremental" type="1">
+<li>Can be deployed to run using LAMP (for linux) or XAMPP (for windows)</li>
+</ol>
+<h2 id="importing-database-to-mysql.">3. Importing database to MySQL.</h2>
+<ul class="incremental">
+<li>Using PHPMyAdmin create database named ‘warehousedb’</li>
+<li>Import warehousedb.sql from root project directory ./WarehouseManager/warehousedb.sql into the newly created database.</li>
+</ul>
+<h2 id="adding-users-to-database">4. Adding users to database</h2>
+<ul class="incremental">
+<li>In PHPMyAdmin select the users table and insert a user with username and password, we will use this for login.</li>
+</ul>
+<h2 id="logging-in">5. Logging in</h2>
+<ul class="incremental">
+<li>go to WarehouseManager/Login_Page.html and enter credentials that were inserted in section 4.</li>
+</ul>
+<figure>
+<img src="images/1-loginPage.png" width="600" alt="Login Page" /><figcaption aria-hidden="true">Login Page</figcaption>
+</figure>
+<figure>
+<img src="images/2-loggedIn.png" width="600" alt="Logged In" /><figcaption aria-hidden="true">Logged In</figcaption>
+</figure>
+<h2 id="adding-cars-to-the-database">6. Adding cars to the database</h2>
+<ul class="incremental">
+<li>In the navbar go to ‘Add Car’ and enter car information then press ‘Save car Info’</li>
+</ul>
+<figure>
+<img src="images/3-addCar.png" width="600" alt="Add Car" /><figcaption aria-hidden="true">Add Car</figcaption>
+</figure>
+<h2 id="editing-and-removing-cars-to-the-database">7. Editing and removing cars to the database</h2>
+<ul class="incremental">
+<li>In the navbar go to ‘View Cars’ or ‘Search Cars’. If you go to search cars enter criteria to search for, it could be model,make,year,vin.</li>
+<li>Find entry you want to edit/delete and select it, if edit is pressed enter new information and click the button.</li>
+</ul>
+<figure>
+<img src="images/7-showCars.png" width="600" alt="View Cars page" /><figcaption aria-hidden="true">View Cars page</figcaption>
+</figure>
+<figure>
+<img src="images/11-searchResult.png" width="600" alt="Tesla Search" /><figcaption aria-hidden="true">Tesla Search</figcaption>
+</figure>
+<figure>
+<img src="images/4-updateCar.png" width="600" alt="Car Edited" /><figcaption aria-hidden="true">Car Edited</figcaption>
+</figure>
+<h2 id="adding-client-to-the-database">8. Adding Client to the database</h2>
+<ul class="incremental">
+<li>In the navbar go to ‘Add Client’ and enter Client information then press ‘Save Client Info’.</li>
+<li>If succesfull a message will show confirming the addition in the ‘Home’ page.</li>
+</ul>
+<figure>
+<img src="images/5-addClient.png" width="600" alt="Add Client" /><figcaption aria-hidden="true">Add Client</figcaption>
+</figure>
+<figure>
+<img src="images/6-clientAddedMessage.png" width="600" alt="Add Client Successful" /><figcaption aria-hidden="true">Add Client Successful</figcaption>
+</figure>
+<h2 id="editing-and-removing-cars-to-the-database-1">9. Editing and removing cars to the database</h2>
+<ul class="incremental">
+<li>In the navbar go to ‘View Clients’.</li>
+<li>Find entry you want to edit/delete and select it, if edit is pressed enter new information and click the button.</li>
+</ul>
+<figure>
+<img src="images/8-showClients.png" width="600" alt="View Clients Page" /><figcaption aria-hidden="true">View Clients Page</figcaption>
+</figure>
+<h2 id="using-minimum-container-length-calculator">10. Using Minimum Container Length Calculator</h2>
+<ul class="incremental">
+<li>In the navbar go to ‘Required Container Length Calculator’.</li>
+<li>Enter the lengths of the cars you want to ship in container (in meters).</li>
+<li>The result will show if it can fit in 20FT or 40FT with amount of space left (padding in meters) to use as extra space for shipping more goods.</li>
+</ul>
+<figure>
+<img src="images/8-showClients.png" width="600" alt="Container Length Requirement And Padding" /><figcaption aria-hidden="true">Container Length Requirement And Padding</figcaption>
+</figure>

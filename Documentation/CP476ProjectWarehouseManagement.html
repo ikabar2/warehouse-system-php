@@ -1,0 +1,179 @@
+<h1 id="cp476-group-project-warehouse-management">CP476 Group Project: Warehouse management</h1>
+<h3 id="group-members">Group members</h3>
+<ol class="incremental" type="1">
+<li>Ismail Kabar</li>
+<li>Abdirahman Yassin</li>
+<li>Faiq Ahmed</li>
+<li>Ryan Jiffri</li>
+</ol>
+<h2 id="introduction">Introduction</h2>
+<p>A webapp to improve workflow of managing car warehouse inventory and client information for use when shipping.</p>
+<h2 id="problem-solving-and-algorithm">Problem solving and algorithm</h2>
+<ol class="incremental" type="1">
+<li>Easily insert data into a database for cars and clients and ability to modify/see data at a glance.</li>
+<li>We will also be using the an algorithm to calculate the size of a container for the car shipment. It will recommend a minimum container size depending on the length of vehicles shipped.</li>
+</ol>
+<h2 id="system-design">System Design</h2>
+<figure>
+<img src="images/Arch.png" width="600" alt="System Tier Design" /><figcaption aria-hidden="true">System Tier Design</figcaption>
+</figure>
+<figure>
+<img src="images/StateDiagram.png" width="600" alt="State Diagram" /><figcaption aria-hidden="true">State Diagram</figcaption>
+</figure>
+<figure>
+<img src="images/loginDiagram.png" width="600" alt="Login diagram" /><figcaption aria-hidden="true">Login diagram</figcaption>
+</figure>
+<h2 id="requirements-and-specifications">Requirements and specifications</h2>
+<h5 id="technical-requirements-or-tools-to-be-used">Technical requirements (or tools to be used):</h5>
+<ol class="incremental" type="1">
+<li>Apache webserver</li>
+<li>mySQL</li>
+<li>XAMPP</li>
+<li>PHP 8.0.1 (or newer)</li>
+</ol>
+<h5 id="specification">Specification:</h5>
+<ul class="incremental">
+<li>Web design specifics
+<ul class="incremental">
+<li>HTML with PHP CGI components.</li>
+<li>Static Webpages</li>
+<li>Login page</li>
+<li>Home page</li>
+<li>Vehicle view page</li>
+<li>Client view page</li>
+<li>client object
+<ul class="incremental">
+<li>id(primary key)</li>
+<li>name</li>
+<li>address</li>
+<li>phone number</li>
+</ul></li>
+<li>vehicle
+<ul class="incremental">
+<li>id(primary key)</li>
+<li>VIN</li>
+<li>make</li>
+<li>model</li>
+<li>year</li>
+<li>colour</li>
+<li>clientID (foreign key) (not required)</li>
+</ul></li>
+</ul></li>
+<li>Software requirements
+<ul class="incremental">
+<li>Any OS to run XAMPP</li>
+</ul></li>
+<li>Constraints
+<ul class="incremental">
+<li>Only accessible via web browser that supports HTML.</li>
+<li>in order to change requirement for extra fields or add/remove features the app code must be modified.</li>
+</ul></li>
+</ul>
+<h2 id="development-phases">Development phases :</h2>
+<ol class="incremental" type="1">
+<li>Planning</li>
+<li>Assignment: assign each team members gets assigned their parts.</li>
+<li>Building: creating the site layout, content, design and implementing functionalities.</li>
+<li>Testing: testing cross browser performance and content rendering.</li>
+<li>Optimization: this phase requires reviewing project checklist to make sure all requirements met and improve performance based on the result from the testing phase.</li>
+<li>Final : final review is required amongst team members and submit the project.</li>
+</ol>
+<h2 id="milestones-schedule">Milestones &amp; schedule</h2>
+<h4 id="schedule">schedule</h4>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 79%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task ID</th>
+<th>Description</th>
+<th>Deadline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Set up development environment and resolve dependencies for each group member.</td>
+<td>March 23rd 2021</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Setup structure of project with respect to system architecture design laid out in the specifications.</td>
+<td>March 25th 2021</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Research and setup of HTML and CSS</td>
+<td>March 31st 2021</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Implement Login/logout system with database connection</td>
+<td>April 3rd 2021</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Test system and fix bugs</td>
+<td>April 8th 2021</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Finalize documentation and prepare presentation</td>
+<td>April 9th 2021</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Submit and present</td>
+<td>April 10th 2021</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tasks">Tasks</h4>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 62%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Description</th>
+<th>Members</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Login system</td>
+<td>PHP system for checking login credentials and allowing users to access functionality of website.</td>
+<td>Ryan Jiffri, Ismail Kabar</td>
+</tr>
+<tr class="even">
+<td>User Interface for pages</td>
+<td>HTML and CSS to design the pages to look good.</td>
+<td>Ismail Kabar, Faiq Ahmed</td>
+</tr>
+<tr class="odd">
+<td>Database design</td>
+<td>Design database with relations</td>
+<td>Ryan Jiffri, Abdirahman Yassin</td>
+</tr>
+<tr class="even">
+<td>Documentation and testing</td>
+<td>Document and test components as they are implemented</td>
+<td>Faiq Ahmed, Abdirahman Yassin</td>
+</tr>
+<tr class="odd">
+<td>Presentation</td>
+<td>Present project</td>
+<td>Ryan Jiffri</td>
+</tr>
+</tbody>
+</table>
+<h2 id="project-deliverables">project deliverables</h2>
+<p>A functional website that runs on a local network Apache server. How to use the website document.</p>
+<h2 id="references">References</h2>
+<p>Any external references go here. references will be added later</p>

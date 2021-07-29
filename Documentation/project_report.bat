@@ -1,0 +1,1 @@
+pandoc -i project_report.md -o project_report.html

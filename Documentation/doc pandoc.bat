@@ -1,0 +1,1 @@
+pandoc -i CP476ProjectWarehouseManagement.md -o CP476ProjectWarehouseManagement.html
