@@ -1,0 +1,106 @@
+﻿body {
+  background-color: white;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: grey;
+}
+h1 {
+  color: black;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 30%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.divlogin {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+section {
+  position: relative;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-width: 5px;
+  height: 10px;
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+  position: center;
+  max-width: 500px;
+}
+.content .textBox h2 {
+  color: #911;
+
+  line-height: 1em;
+  font-weight: 500;
+}
